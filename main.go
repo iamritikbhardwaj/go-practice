@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/iamritikbhardwaj/commonPractices/pracPrograms"
+)
 
 func main() {
 	fmt.Println("Hello World")
-	Sleeps()
-	SlowDown()
+	pracPrograms.Sleeps()
+	pracPrograms.SlowDown()
 }
