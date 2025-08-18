@@ -2,23 +2,22 @@ package pracPrograms
 
 import (
 	"fmt"
+	"strings"
 	"time"
 )
 
-const delay = 7 * time.Second
-
-func slowDown(str string) {
-	for i, _ := range str {
-		print(string(str[i]))
-	}
-}
+const delay = 2 * time.Second
 
 func print(msg string) {
-	fmt.Print(msg)
-	time.Sleep(delay)
+	for i, _ := range msg {
+		for j := 0; j <= i; j++ {
+			fmt.Print(strings.Split(msg, "")[i])
+		}
+		time.Sleep(delay)
+	}
 }
 
 func SlowDown() {
 	str := "hello world"
-	slowDown(str)
+	print(str)
 }
