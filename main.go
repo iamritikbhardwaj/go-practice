@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Hello World")
-	pracPrograms.Sleeps()
+	// pracPrograms.Sleeps()
 	pracPrograms.SlowDown()
 }
