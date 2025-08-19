@@ -9,7 +9,22 @@ import (
 func main() {
 	fmt.Println("Hello World")
 	// pracPrograms.Sleeps()
-	nums := []int{5, 4, 3, 2, 1}
-	pracPrograms.MinHeap(nums)
+	h := &pracPrograms.MinHeap{}
+
+	h.Insert(10)
+	h.Insert(4)
+	h.Insert(15)
+	h.Insert(20)
+	h.Insert(0)
+	h.Insert(8)
+
+	fmt.Println("Heap elements:")
+	h.Print()
+	h.Remove()
+	h.Remove()
+	h.Remove()
+	h.Remove()
+	h.Remove()
+	h.Remove()
 	// pracPrograms.SlowDown()
 }
